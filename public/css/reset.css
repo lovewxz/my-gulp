@@ -1,0 +1,221 @@
+@charset "utf-8";
+html {
+  color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: 12px/1.5 '微软雅黑', tahoma, Srial, helvetica, sans-serif;
+}
+
+img {
+  border: none;
+  display: block;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+li, ul {
+  list-style: none;
+}
+
+a, body a:hover {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+.borderbox {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.cf:after {
+  clear: both;
+  overflow: hidden;
+  content: "";
+  display: table;
+}
+
+.cf {
+  zoom: 1;
+}
+
+.float_l {
+  float: left;
+}
+
+.float_r {
+  float: right;
+}
+
+.po_r {
+  position: relative;
+}
+
+.po_a {
+  position: absolute;
+}
+
+.po_f {
+  position: fixed;
+}
+
+.m_auto {
+  margin: 0 auto;
+}
+
+.display_b {
+  display: block;
+}
+
+.display_ib {
+  display: inline-block;
+}
+
+.translateXY {
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.translateY {
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.translateX {
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.zt-main {
+  width: 10rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ball {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  5% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+@-moz-keyframes ball {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  5% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+@-o-keyframes ball {
+  0% {
+    opacity: 0;
+    -o-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  5% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 0;
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+@keyframes ball {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+  5% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+}
+
+.swal-form {
+  padding-top: 3%;
+  overflow: auto;
+  height: auto;
+}
+
+.swal-form input.nice-input {
+  display: block;
+  margin: 0;
+  width: 96%;
+  font-family: sans-serif;
+  font-size: 18px;
+  box-shadow: none;
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+  height: initial;
+}
+
+.swal-form input.nice-input:focus, .swal-form input.nice-input.focus {
+  outline: none;
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.swal-form .patch-swal-styles-for-inputs {
+  width: initial !important;
+  height: initial !important;
+  display: initial !important;
+}
